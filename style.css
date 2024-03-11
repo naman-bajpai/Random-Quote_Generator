@@ -1,0 +1,72 @@
+/* Light mode styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+
+.title {
+    font-family: "Maven Pro", sans-serif;
+    font-weight: 300;
+}
+.container {
+    text-align: center;
+}
+
+.quote-container {
+    background-color: black;
+    color: #0056b3;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 2px solid #0056b3;
+}
+
+.quote-container:hover {
+    transform: translateY(-5px);
+}
+
+#quote {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #989595;
+    line-height: 1.6;
+}
+
+#new-quote-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#new-quote-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.quote-container.dark-mode {
+    background-color: #222;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+#quote.dark-mode {
+    color: #fff;
+}
